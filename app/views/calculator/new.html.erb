@@ -1,0 +1,18 @@
+<h1>String Calculator</h1>
+
+<% if @error %>
+  <p style="color: red;"><%= @error %></p>
+<% end %>
+
+<%= form_with url: calculator_create_path, method: :post, data: { turbo: false } do |form| %>
+  <div>
+    <%= form.label :numbers, "Enter comma-separated numbers:" %>
+    <%= form.text_field :numbers, id: "numbers" %>
+  </div>
+  
+  <br/>
+
+  <div>
+    <%= form.submit "Calculate Sum" %>
+  </div>
+<% end %>
