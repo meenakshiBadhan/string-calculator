@@ -1,24 +1,42 @@
-# README
+# String Calculator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project implements a simple string calculator that can add numbers from a string input.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+1.  **Clone the repository:**
 
-* System dependencies
+    ```
+    git clone <repository_url>
+    cd string_calculator
+    ```
 
-* Configuration
+2.  **Install dependencies:**
 
-* Database creation
+    ```
+    bundle install
+    ```
 
-* Database initialization
+3.  **Run the tests:**
 
-* How to run the test suite
+    ```
+    rspec
+    ```
 
-* Services (job queues, cache servers, search engines, etc.)
+4.  **Start the Rails server:**
 
-* Deployment instructions
+    ```bash
+    rails server
+    ```
 
-* ...
+5.  **Access the application:**
+
+    Open your web browser and navigate to `http://localhost:3000`.
+
+## Usage
+
+Enter a string of numbers separated by commas, newlines, or a custom delimiter in the text box and click "Calculate Sum". The result will be displayed on the next page.
+
+## Testing
+
+The project includes RSpec tests to ensure the functionality is working correctly. You can run the tests using the `rspec` command.
